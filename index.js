@@ -1,4 +1,3 @@
-
 /**
  * Element
  * Element get/set input values component
@@ -17,7 +16,7 @@ module.exports = Element;
  * Element
  */
 
-function Element(el, val){
+function Element(el){
   this.el = el;
 };
 
