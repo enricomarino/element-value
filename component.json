@@ -2,7 +2,9 @@
   "name": "element-value",
   "repo": "enricomarino/element-value",
   "description": "Element get/set input values component",
-  "version": "0.0.1",
-  "dependencies": {},
+  "version": "0.0.2",
+  "dependencies": {
+    "enricomarino/element-type": "*"
+  },
   "scripts": ["index.js"]
 }
