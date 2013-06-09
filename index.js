@@ -7,16 +7,18 @@
  */
 
 /**
- * Expose `value`
+ * Component dependencies
  */
 
-module.exports = value;
+var type = require('element-type');
 
 /**
- * value
+ * Expose component
  */
 
-function value (element) {
+module.exports = function (element) {
+
+  element.use(type);
 
   /**
    * value
@@ -43,7 +45,7 @@ function value (element) {
   
   element.prototype.get_value = function () {
     var el = this.el;
-    var type = typeof(el);
+    var type = this.type();
     var value;
     var checked;
   
@@ -92,21 +94,6 @@ function value (element) {
     el.value = value;
     return this;
   };
-  
-  /**
-   * typeof
-   * Element type.
-   * 
-   * @api private
-   */
-  
-  function typeof(el) {
-    var name = el.nodeName.toLowerCase();
-    if ('input' == name && 'checkbox' == el.getAttribute('type')) {
-      return 'checkbox';
-    }
-    return name.toLowerCase();
-  }
 
   return element;
 }
