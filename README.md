@@ -6,6 +6,10 @@ Element get/set input values component
 
     $ component install enricomarino/element-value
 
+## API
+
+### Element#value([value:String]):Element|String
+
 ## License
 
 (The MIT License)
