@@ -1,6 +1,6 @@
 # element-value
 
-Element get/set input values component
+get/set input value, plugin for element
 
 ## Installation
 
@@ -9,6 +9,10 @@ Element get/set input values component
 ## API
 
 ### Element#value([value:String]):Element|String
+
+### Element#get_value():String
+
+### Element#set_value(value:String):Element
 
 ## License
 
